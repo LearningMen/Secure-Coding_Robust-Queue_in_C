@@ -71,7 +71,7 @@ char qe_errbuf[256] = "no error";	/* the error message buffer */
 #define ERRBUF3(str, n, m) (void) snprintf(qe_errbuf, sizeof(qe_errbuf), str, n, m)
 
 
-// Queues that consists of multiple queues. This is static with max size
+// Queues that consists of multiple queues. 
 static QUEUE **queues = NULL;		 
 //nonce generator -- this MUST be non-zero always
 static unsigned int noncectr = 1;	
